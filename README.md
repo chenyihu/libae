@@ -1,2 +1,2 @@
 # libae
-libae of Redis
+Redis的异步封装
