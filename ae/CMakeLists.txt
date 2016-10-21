@@ -18,4 +18,6 @@ else(HAVE_KQUEUE)
   set(AE_SOURCE_FILES ae_select.c)
 endif(HAVE_KQUEUE)
 
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O2 -fPIC")
+
 add_library(${PROJECT_NAME} STATIC ${SOURCE_FILES} ${AE_SOURCE_FILES})
